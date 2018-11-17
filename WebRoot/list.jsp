@@ -28,7 +28,6 @@
 		<th>手机</th>
 		<th>邮箱</th>
 		<th>描述</th>
-		<th>操作</th>
 	</tr>
 <%--
 要遍历提PageBean的beanList这个集合
@@ -41,10 +40,7 @@
 		<td>${cstm.cellphone }</td>
 		<td>${cstm.email }</td>
 		<td>${cstm.description }</td>
-		<td>
-			<a href="<c:url value='/CustomerServlet?method=preEdit&cid=${cstm.cid }'/>">编辑</a>
-			<a href="<c:url value='/msg.jsp'/>">删除</a>
-		</td>
+		
 	</tr>
 </c:forEach>
 </table>
